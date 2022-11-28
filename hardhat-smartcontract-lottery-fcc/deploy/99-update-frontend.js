@@ -2,9 +2,8 @@ const { ethers, network } = require("hardhat")
 const fs = require("fs")
 const { builtinModules } = require("module")
 
-const FRONT_END_ADDRESSES_FILE =
-    "../nextjs-smartcontract-lottery-fcc/constants/contractAddresses.json"
-const FRONT_END_ABI_FILE = "../nextjs-smartcontract-lottery-fcc/constants/abi.json"
+const FRONT_END_ADDRESSES_FILE = "../nextjs-smartcontract-lottery/constants/contractAddresses.json"
+const FRONT_END_ABI_FILE = "../nextjs-smartcontract-lottery/constants/abi.json"
 
 module.exports = async function () {
     if (process.env.UPDATE_FRONT_END) {
